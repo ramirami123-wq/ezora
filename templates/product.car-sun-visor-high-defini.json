@@ -12,11 +12,23 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "liquid_3MUnNR": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<style>\n.star-review-wrapper {\ndisplay: flex;\nalign-items: center;\ngap: 8px;\nflex-shrink: 0;\n}\n.star-icons svg {\nwidth: 20px;\nheight: 20px;\nfill: #00FFFF; /* Your deep red color */\n}\n.review-text {\nfont-size: 16px;\nfont-weight: 500;\ncolor: #333;\nwhite-space: nowrap;\n}\n@media (max-width: 480px) {\n.star-review-wrapper {\nflex-direction: row;\njustify-content: center;\n}\n​\n}\n</style>\n<div class=\"star-review-wrapper\">\n<div class=\"star-icons\">\n<!-- 5 Rounded Stars -->\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\"/></svg>\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\"/></svg>\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\"/></svg>\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\"/></svg>\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\"/></svg>\n</div>\n<div class=\"review-text\">\n<strong>5</strong> by <strong>124+</strong> Customers\n</div>\n</div>"
+          }
+        },
         "liquid_KKiNTm": {
           "type": "liquid",
           "name": "Hurry",
           "settings": {
-            "liquid": "<section class=\"sale-timer\" aria-label=\"Sale countdown timer\">\n  <style>\n    .sale-timer{\n      width:100%;\n      padding:22px 12px;\n      display:flex;\n      justify-content:center;\n      background:#FFFFF;\n      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;\n    }\n    .sale-timer__wrap{\n      text-align:center;\n    }\n    .sale-timer__label{\n      font-size:24px;\n      font-weight:500;\n      color:#111;\n      margin:0 0 14px 0;\n      line-height:1.1;\n    }\n\n    .sale-timer__row{\n      display:flex;\n      align-items:center;\n      justify-content:center;\n      gap:10px;\n    }\n\n    .sale-timer__box{\n      width:88px;\n      height:68px;\n      background:#2a3e79;\n      color:white;\n      border-radius:6px;\n      display:flex;\n      align-items:center;\n      justify-content:center;\n      font-size:34px;\n      font-weight:700;\n      letter-spacing:1px;\n      font-variant-numeric: tabular-nums;\n    }\n\n    .sale-timer__colon{\n      font-size:32px;\n      font-weight:700;\n      color:#00000;\n      line-height:1;\n      transform: translateY(-1px);\n      user-select:none;\n    }\n\n    @media (max-width:420px){\n      .sale-timer__label{ font-size:20px; }\n      .sale-timer__box{ width:72px; height:58px; font-size:30px; }\n      .sale-timer__colon{ font-size:28px; }\n      .sale-timer__row{ gap:8px; }\n    }\n  </style>\n\n  <div class=\"sale-timer__wrap\">\n    <div class=\"sale-timer__label\">Hurry! Sale ends in</div>\n\n    <div class=\"sale-timer__row\" role=\"timer\" aria-live=\"polite\">\n      <div class=\"sale-timer__box\" id=\"st-hours\">00</div>\n      <div class=\"sale-timer__colon\">:</div>\n      <div class=\"sale-timer__box\" id=\"st-mins\">00</div>\n      <div class=\"sale-timer__colon\">:</div>\n      <div class=\"sale-timer__box\" id=\"st-secs\">00</div>\n    </div>\n  </div>\n\n  <script>\n    (function () {\n      const durationHours = 12; // change if needed\n      const endAt = Date.now() + durationHours * 60 * 60 * 1000;\n\n      const h = document.getElementById(\"st-hours\");\n      const m = document.getElementById(\"st-mins\");\n      const s = document.getElementById(\"st-secs\");\n\n      const pad = n => String(n).padStart(2, \"0\");\n\n      function update(){\n        let diff = endAt - Date.now();\n        if(diff < 0) diff = 0;\n\n        const total = Math.floor(diff / 1000);\n        h.textContent = pad(Math.floor(total / 3600));\n        m.textContent = pad(Math.floor((total % 3600) / 60));\n        s.textContent = pad(total % 60);\n\n        if(diff === 0) clearInterval(timer);\n      }\n\n      update();\n      const timer = setInterval(update, 1000);\n    })();\n  </script>\n</section>"
+            "liquid": "<section class=\"sale-timer\" aria-label=\"Sale countdown timer\">\n  <style>\n    .sale-timer{\n      width:100%;\n      padding:22px 12px;\n      display:flex;\n      justify-content:center;\n      background:#FFFFF;\n      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;\n    }\n    .sale-timer__wrap{\n      text-align:center;\n    }\n    .sale-timer__label{\n      font-size:24px;\n      font-weight:500;\n      color:#111;\n      margin:0 0 14px 0;\n      line-height:1.1;\n    }\n\n    .sale-timer__row{\n      display:flex;\n      align-items:center;\n      justify-content:center;\n      gap:10px;\n    }\n\n    .sale-timer__box{\n      width:88px;\n      height:68px;\n      background:#00FFFF;\n      color:white;\n      border-radius:6px;\n      display:flex;\n      align-items:center;\n      justify-content:center;\n      font-size:34px;\n      font-weight:700;\n      letter-spacing:1px;\n      font-variant-numeric: tabular-nums;\n    }\n\n    .sale-timer__colon{\n      font-size:32px;\n      font-weight:700;\n      color:#00000;\n      line-height:1;\n      transform: translateY(-1px);\n      user-select:none;\n    }\n\n    @media (max-width:420px){\n      .sale-timer__label{ font-size:20px; }\n      .sale-timer__box{ width:72px; height:58px; font-size:30px; }\n      .sale-timer__colon{ font-size:28px; }\n      .sale-timer__row{ gap:8px; }\n    }\n  </style>\n\n  <div class=\"sale-timer__wrap\">\n    <div class=\"sale-timer__label\">Hurry! Sale ends in</div>\n\n    <div class=\"sale-timer__row\" role=\"timer\" aria-live=\"polite\">\n      <div class=\"sale-timer__box\" id=\"st-hours\">00</div>\n      <div class=\"sale-timer__colon\">:</div>\n      <div class=\"sale-timer__box\" id=\"st-mins\">00</div>\n      <div class=\"sale-timer__colon\">:</div>\n      <div class=\"sale-timer__box\" id=\"st-secs\">00</div>\n    </div>\n  </div>\n\n  <script>\n    (function () {\n      const durationHours = 12; // change if needed\n      const endAt = Date.now() + durationHours * 60 * 60 * 1000;\n\n      const h = document.getElementById(\"st-hours\");\n      const m = document.getElementById(\"st-mins\");\n      const s = document.getElementById(\"st-secs\");\n\n      const pad = n => String(n).padStart(2, \"0\");\n\n      function update(){\n        let diff = endAt - Date.now();\n        if(diff < 0) diff = 0;\n\n        const total = Math.floor(diff / 1000);\n        h.textContent = pad(Math.floor(total / 3600));\n        m.textContent = pad(Math.floor((total % 3600) / 60));\n        s.textContent = pad(total % 60);\n\n        if(diff === 0) clearInterval(timer);\n      }\n\n      update();\n      const timer = setInterval(update, 1000);\n    })();\n  </script>\n</section>"
+          }
+        },
+        "liquid_m7Uegw": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div style=\"padding: 12px; text-align: left; background-color: #f9f9f9; font-size: 15px; border-radius: 12px; margin-top: 10px; margin-bottom: 10px; line-height: 1.6;\">\n<span style=\"font-weight: bold;\">☀️ 2-in-1 Day & Night Protection</span> – The gray visor reduces harsh sunlight during the day, while the yellow visor minimizes headlight glare at night for safer driving.<br><br>\n\n<span style=\"font-weight: bold;\">🕶 Anti-Glare & UV Protection</span> – Filters strong light and blocks harmful UV rays to protect your eyes and reduce driving fatigue.<br><br>\n\n<span style=\"font-weight: bold;\">🚗 Easy Clip-On Installation</span> – Simple to attach to your car's sun visor and fits most vehicles, giving you clear and comfortable visibility while driving.\n</div>"
           }
         },
         "liquid_WqHpzt": {
@@ -60,7 +72,9 @@
         }
       },
       "block_order": [
+        "liquid_3MUnNR",
         "liquid_KKiNTm",
+        "liquid_m7Uegw",
         "liquid_WqHpzt",
         "variant_picker",
         "quantity_selector",
@@ -94,17 +108,8 @@
       "block_order": [
         "description"
       ],
+      "disabled": true,
       "settings": {}
-    },
-    "product-recommendations": {
-      "type": "product-recommendations",
-      "settings": {
-        "subheading": "",
-        "title": "You may also like",
-        "recommendations_count": 4,
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
-      }
     },
     "1772112756b71eda01": {
       "type": "_blocks",
@@ -113,10 +118,10 @@
           "type": "ai_gen_block_adef03d",
           "name": "Free delivery on orders",
           "settings": {
-            "text_1": "Free Delivery  on orders over $40",
-            "text_2": "Free Delivery  on orders over $40",
-            "text_3": "Free Delivery  on orders over $40",
-            "text_4": "Free Delivery  on orders over $40",
+            "text_1": "Delivery All Over Lebanon",
+            "text_2": "Delivery All Over Lebanon",
+            "text_3": "Delivery All Over Lebanon",
+            "text_4": "Delivery All Over Lebanon",
             "show_icon": false,
             "icon_type": "star",
             "icon_size": 20,
@@ -131,7 +136,7 @@
             "item_spacing": 60,
             "padding_vertical": 10,
             "desktop_width_percent": 100,
-            "background_color": "#f7f7f7"
+            "background_color": "#00ffff"
           },
           "blocks": {}
         }
@@ -141,26 +146,25 @@
       ],
       "settings": {}
     },
-    "image_with_text_8YkwVd": {
+    "image_with_text_LdkxPz": {
       "type": "image-with-text",
       "blocks": {
-        "item_BrjwQF": {
+        "item_HY99XB": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/IMG_6209.webp",
+            "image": "shopify://shop_images/71z57WcW1qL.__AC_SX300_SY300_QL70_ML2.jpg",
             "tab_label": "Item",
             "subheading": "",
-            "title": "",
-            "content": "<p><br/>This Makeup Pouch is designed to keep your essentials organized, accessible, and ready wherever you go.</p><p>With its spacious interior and smart compartments, it easily stores cosmetics, skincare, toiletries, and everyday items in one neat place.<br/><br/></p>",
+            "title": "Car Sun Visor – Day & Night Anti-Glare Protection",
+            "content": "<p><br/>Drive more comfortably with this <strong>2-in-1 car sun visor</strong> designed to reduce harsh sunlight during the day and minimize headlight glare at night. The easy clip-on design fits most car visors and helps protect your eyes from bright light and UV rays, giving you a <strong>clearer and safer driving experience anytime</strong>.<br/><br/></p>",
             "button_text": "",
             "button_link": ""
           }
         }
       },
       "block_order": [
-        "item_BrjwQF"
+        "item_HY99XB"
       ],
-      "disabled": true,
       "name": "Image with text",
       "settings": {
         "reveal_on_scroll": true,
@@ -175,26 +179,59 @@
         "button_text_color": "rgba(0,0,0,0)"
       }
     },
-    "image_with_text_XrnFrQ": {
+    "blocks_3dtGGV": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_adef03d_eDmYpK": {
+          "type": "ai_gen_block_adef03d",
+          "name": "Free delivery on orders",
+          "settings": {
+            "text_1": "Drive with clarity and confidence — no matter the time of day.”",
+            "text_2": "Drive with clarity and confidence — no matter the time of day.”",
+            "text_3": "Drive with clarity and confidence — no matter the time of day.”",
+            "text_4": "Drive with clarity and confidence — no matter the time of day.”",
+            "show_icon": false,
+            "icon_type": "star",
+            "icon_size": 20,
+            "icon_color": "#0c1b54",
+            "icon_text_spacing": 8,
+            "text_size": 16,
+            "text_weight": "500",
+            "text_transform": "none",
+            "text_color": "#000000",
+            "speed": 5,
+            "pause_on_hover": true,
+            "item_spacing": 60,
+            "padding_vertical": 10,
+            "desktop_width_percent": 100,
+            "background_color": "#00ffff"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_adef03d_eDmYpK"
+      ],
+      "settings": {}
+    },
+    "image_with_text_bGWtVQ": {
       "type": "image-with-text",
       "blocks": {
-        "item_GpEwj6": {
+        "item_eMgnqd": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/IMG_6208.webp",
-            "tab_label": "",
+            "tab_label": "Item",
             "subheading": "",
-            "title": "",
-            "content": "<p><br/>Stylish yet practical, this pouch helps you stay prepared without adding bulk to your bag. Whether at home or on the move, Nazzemni makes organization simple and elegant. ✨<br/><br/></p>",
+            "title": "2-in-1 Car Anti-Glare Sun Visor",
+            "content": "<p>Make every drive clearer and more comfortable with this <strong>dual-layer sun visor</strong> designed for both day and night use. The dark visor reduces strong sunlight while the yellow visor helps soften bright headlights at night. With its <strong>easy clip-on installation and durable design</strong>, it’s a simple upgrade that improves visibility and helps protect your eyes while driving. <br/></p>",
             "button_text": "",
             "button_link": ""
           }
         }
       },
       "block_order": [
-        "item_GpEwj6"
+        "item_eMgnqd"
       ],
-      "disabled": true,
       "name": "Image with text",
       "settings": {
         "reveal_on_scroll": true,
@@ -208,6 +245,41 @@
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
       }
+    },
+    "blocks_VHNz8W": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_adef03d_DG3DYF": {
+          "type": "ai_gen_block_adef03d",
+          "name": "Free delivery on orders",
+          "settings": {
+            "text_1": "Block the glare, protect your eyes, and enjoy a safer drive.",
+            "text_2": "Block the glare, protect your eyes, and enjoy a safer drive.",
+            "text_3": "Block the glare, protect your eyes, and enjoy a safer drive.",
+            "text_4": "Block the glare, protect your eyes, and enjoy a safer drive.",
+            "show_icon": false,
+            "icon_type": "star",
+            "icon_size": 20,
+            "icon_color": "#0c1b54",
+            "icon_text_spacing": 8,
+            "text_size": 16,
+            "text_weight": "500",
+            "text_transform": "none",
+            "text_color": "#000000",
+            "speed": 5,
+            "pause_on_hover": true,
+            "item_spacing": 60,
+            "padding_vertical": 10,
+            "desktop_width_percent": 100,
+            "background_color": "#00ffff"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_adef03d_DG3DYF"
+      ],
+      "settings": {}
     },
     "com_6hdjLn": {
       "type": "com",
@@ -215,7 +287,7 @@
         "item_77LR69": {
           "type": "item",
           "settings": {
-            "row_heading": "Large capacity — fits all essentials in one pouch",
+            "row_heading": "Safer Driving",
             "first_column": "Yes",
             "second_column": "No",
             "third_column": "",
@@ -225,7 +297,7 @@
         "item_dEPCJH": {
           "type": "item",
           "settings": {
-            "row_heading": "Lightweight & travel-friendly",
+            "row_heading": "Day & Night Protection",
             "first_column": "Yes",
             "second_column": "No",
             "third_column": "",
@@ -235,7 +307,7 @@
         "item_KWPwtH": {
           "type": "item",
           "settings": {
-            "row_heading": "Stylish modern design",
+            "row_heading": "Reduces Eye Strain",
             "first_column": "Yes",
             "second_column": "No",
             "third_column": "",
@@ -245,7 +317,7 @@
         "item_jEyeCX": {
           "type": "item",
           "settings": {
-            "row_heading": "Durable materials for daily use",
+            "row_heading": "Clearer Visibility",
             "first_column": "Yes",
             "second_column": "No",
             "third_column": "",
@@ -340,9 +412,9 @@
         "second_button_border_thickness": 2,
         "table_heading_color": "#2f1718",
         "table_heading_active_color": "#ffffff",
-        "table_heading_bg_active_color": "#2a3e79",
+        "table_heading_bg_active_color": "#00ffff",
         "table_column_active_bg_color": "#ffffff",
-        "table_column_active_border_color": "#2a3e79",
+        "table_column_active_border_color": "#00ffff",
         "table_row_border_color": "#d3cabc",
         "table_row_heading_color": "#2f1718",
         "table_row_text_color": "#2f1718",
@@ -388,36 +460,36 @@
         "question_adqrYK": {
           "type": "question",
           "settings": {
-            "title": "Is the pouch suitable for travel?",
-            "answer": "<p>Yes! The Nazzemni Makeup Pouch is lightweight, compact, and travel-friendly — ideal for vacations, business trips, gym bags, or everyday use.</p>"
+            "title": "Will this visor fit my car?",
+            "answer": "<p>Yes, the visor is designed to fit <strong>most standard car sun visors</strong> with its easy clip-on design.</p>"
           }
         },
         "question_TDP7NK": {
           "type": "question",
           "settings": {
-            "title": "Does it have compartments inside?",
-            "answer": "<p>Absolutely. It features multiple partitions to help you keep items organized and easy to find.</p>"
+            "title": "ow does the day and night visor work?",
+            "answer": "<p>The <strong>gray visor</strong> helps reduce strong sunlight during the day, while the <strong>yellow visor</strong> reduces glare from headlights at night.</p>"
           }
         },
         "question_hPGXCN": {
           "type": "question",
           "settings": {
-            "title": "Can it be used for things other than makeup?",
-            "answer": "<p>Of course! Many customers use it for toiletries, tech accessories, stationery, or small personal items.<br/></p>"
+            "title": "Is it easy to install?",
+            "answer": "<p>Yes, installation is <strong>quick and simple</strong>. Just clip it onto your existing car sun visor and adjust it to the angle you need.</p>"
           }
         },
         "question_7Rxwez": {
           "type": "question",
           "settings": {
-            "title": "Is this a good gift option?",
-            "answer": "<p>Definitely. Its stylish design and practicality make it a great gift for friends, family, or anyone who loves staying organized.</p>"
+            "title": "Does it block my view while driving?",
+            "answer": "<p>No. The visor is made from <strong>clear, high-quality material</strong> that reduces glare while keeping your vision clear.</p>"
           }
         },
         "question_Pzgd7t": {
           "type": "question",
           "settings": {
-            "title": "Is it lightweight to carry?",
-            "answer": "<p>Yes, it’s designed to be portable and easy to carry without adding bulk to your bag. </p>"
+            "title": "Can I flip it up when I don’t need it?",
+            "answer": "<p>Yes, the visor can be <strong>easily flipped up or down</strong> depending on when you need protection.</p>"
           }
         }
       },
@@ -449,10 +521,11 @@
   "order": [
     "main",
     "product-content",
-    "product-recommendations",
     "1772112756b71eda01",
-    "image_with_text_8YkwVd",
-    "image_with_text_XrnFrQ",
+    "image_with_text_LdkxPz",
+    "blocks_3dtGGV",
+    "image_with_text_bGWtVQ",
+    "blocks_VHNz8W",
     "com_6hdjLn",
     "faq_cbkQ3V",
     "1772123363ce666331"
